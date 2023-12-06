@@ -1,0 +1,72 @@
+<html>
+   <head>
+      <link rel="stylesheet" href="basketballStyles.css">
+      <link href="https://fonts.cdnfonts.com/css/cursed-timer-ulil" rel="stylesheet">
+                
+   </head>
+   <body >
+      <div id="scoreboard">
+      <div class="sectionContainer">
+         <div class="container">
+            <div class="scoreContainers">
+               <h3>Guest</h3>
+               <div class="score">
+                  <h4 id="guestScore">
+                     0
+                  </h4>
+               </div>
+               <div class="scoreButtons">
+                  <button id="guestPlusOne" onclick="scoreOneGuest()">+1</button>
+                  <button id="guestPlusTwo" onclick="scoreTwoGuest()">+2</button>
+                  <button id="guestPlusthree" onclick="scoreThreeGuest()">+3</button>
+               </div>
+            </div>
+            <div id="periodContainer">
+               <h5 id="period">1</h5>
+               <button id="newPeriod" onclick="newPeriod()">+1</button>
+            </div>
+            <div class="scoreContainers">
+               <h3>HOME</h3>
+               <div class="score">
+                  <h4 id="homeScore">
+                     0
+                  </h4>
+               </div>
+               <div class="scoreButtons">
+                  <button id="homePlusOne" onclick="scoreOne()">+1</button>
+                  <button id="homePlusTwo"
+                     onclick="scoreTwo()">+2</button>
+                  <button id="homePlusthree"
+                     onclick="scoreThree()">+3</button>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="sectionContainer">
+         <div class="container">
+            <div id="foulContainer">
+               <div class="guestFoulContainer">
+                  <div class="foulCounter">
+                     <h4 id="guestFoulsCount">0</h4>
+                  </div>
+                  <button id="guestFouls" onclick="foulGuest()">Foul</button>
+               </div>
+               <div id="clockContainer">
+                   <div id="clock">
+                        <p id="timer">45:00</p>
+                   </div>
+                        <button id="newGame" onclick="gameReset()">New Game</button>
+                </div>
+               <div  class="homeFoulContainer">
+                  <div class="foulCounter">
+                     <h4 id="homeFoulsCount">0</h4>
+                  </div>
+                  <button id="homeFouls" onclick="foulHome()">Foul</button>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+      <script src="basketballScripts.js"></script>
+   </body>
+</html>
